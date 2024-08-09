@@ -1,4 +1,4 @@
-Запуск приложения uvicorn --factory src.app:create_app
+
 
 Также требуется postgres
 
@@ -12,6 +12,11 @@ docker compose up -d
 Запуск миграций
 ```commandline
 alembic upgrade heads
+```
+
+Запуск приложения 
+```commandline
+uvicorn --factory src.app:create_app
 ```
 
 При запуске приложения в БД кладутся Пётр и Антон, если их там еще нет.

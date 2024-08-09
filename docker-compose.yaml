@@ -1,10 +1,10 @@
 version: "3.8"
-name: book-club
+name: dog-club
 services:
 
   postgres:
     image: postgres:16-alpine
-    container_name: book-club-postgres
+    container_name: dog-club-postgres
     environment:
       POSTGRES_USER: $POSTGRES_USER
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD
